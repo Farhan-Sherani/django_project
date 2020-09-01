@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="response.css" media="screen and (max-width:1529px)">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=PT+Serif:ital@1&display=swap"
+            rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>MASK Verification</title>
+    <style>
+        body {
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .navbar {
+            background-color: burlywood;
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .nav ul {
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .nav ul a {
+            text-decoration: none;
+            list-style: none;
+            padding: 0px 20px;
+            font-size: 1.2rem;
+        }
+
+        .nav ul a:hover {
+            text-decoration: underline;
+            color: royalblue;
+            transition: 0.6s;
+        }
+
+        #covid {
+            padding-left: 1200px;
+            font-size: 1.5rem;
+        }
+
+        #head {
+            font-family: 'Balsamiq Sans', cursive;
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-family: 'PT Serif', serif;
+        }
+
+        .base {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+
+            background-color: rgb(93, 92, 112);
+            height: 641px;
+        }
+
+        .main-section {
+            border-radius: 8px;
+            width: 300px;
+            height: 350px;
+            border: 2px solid rgb(136, 66, 66);
+            background-color: cornsilk;
+        }
+
+        .button {
+            padding: 22px 0px;
+        }
+
+        h1 #head {
+            font-family: 'Balsamiq Sans', cursive;
+            font-size: 1.5rem;
+        }
+
+        .btn {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: bold;
+            border-radius: 11px;
+            font-size: 1rem;
+            border: 2px solid;
+            opacity: .9;
+            padding: 7px 13px;
+        }
+
+        .btn:hover {
+            opacity: 1;
+            cursor: pointer;
+            background-color: rgb(202, 124, 124);
+            transition: 0.6s;
+
+        }
+
+        @media screen and (max-width: 1529px) {
+            .nav ul a {
+                text-decoration: none;
+                list-style: none;
+                padding: 0px 11px;
+                font-size: 1.2rem;
+            }
+
+            #covid {
+                padding-left: 1160px;
+                font-size: 1.5rem;
+            }
+        }
+
+        @media screen and (max-width: 1453px) {
+            .nav ul a {
+                text-decoration: none;
+                list-style: none;
+                padding: 0px 11px;
+                font-size: 1.2rem;
+            }
+
+            #covid {
+                padding-left: 1120px;
+                font-size: 1.5rem;
+            }
+        }
+
+        @media screen and (max-width: 1413px) {
+            .nav ul a {
+                text-decoration: none;
+                list-style: none;
+                padding: 0px 11px;
+                font-size: 1.2rem;
+            }
+
+            #covid {
+                padding-left: 1040px;
+                font-size: 1.5rem;
+            }
+        }
+
+        @media screen and (max-width: 1336px) {
+            .nav ul a {
+                text-decoration: none;
+                list-style: none;
+                padding: 0px 11px;
+                font-size: 1.2rem;
+            }
+
+            #covid {
+                padding-left: 970px;
+                font-size: 1.5rem;
+            }
+        }
+
+        @media screen and (max-width: 1266px) {
+            .nav ul a {
+                text-decoration: none;
+                list-style: none;
+                padding: 0px 11px;
+                font-size: 1.2rem;
+            }
+
+            #covid {
+                padding-left: 890px;
+                font-size: 1.5rem;
+            }
+        }
+
+        @media screen and (max-width: 1184px) {
+            .nav ul a {
+                text-decoration: none;
+                list-style: none;
+                padding: 0px 11px;
+                font-size: 1.2rem;
+            }
+
+            #covid {
+                padding-left: 800px;
+                font-size: 1.5rem;
+            }
+        }
+
+        @media screen and (max-width: 1096px) {
+            .nav ul a {
+                text-decoration: none;
+                list-style: none;
+                padding: 0px 11px;
+                font-size: 1.2rem;
+            }
+
+            #covid {
+                padding-left: 700px;
+                font-size: 1.5rem;
+            }
+        }
+
+        @media screen and (max-width: 993px) {
+            .nav ul a {
+                text-decoration: none;
+                list-style: none;
+                padding: 0px 11px;
+                font-size: 1.2rem;
+            }
+
+            #covid {
+                padding-left: 600px;
+                font-size: 1.5rem;
+            }
+        }
+
+        @media screen and (max-width: 898px) {
+            .nav ul a {
+                text-decoration: none;
+                list-style: none;
+                padding: 0px 11px;
+                font-size: 1.2rem;
+            }
+
+            #covid {
+                padding-left: 500px;
+                font-size: 1.5rem;
+            }
+        }
+
+        @media screen and (max-width: 793px) {
+            .nav ul a {
+                text-decoration: none;
+                list-style: none;
+                padding: 0px 11px;
+                font-size: 1.2rem;
+            }
+
+            #covid {
+                padding-left: 400px;
+                font-size: 1.5rem;
+            }
+        }
+
+        @media screen and (max-width: 693px) {
+            .nav ul a {
+                text-decoration: none;
+                list-style: none;
+                padding: 0px 11px;
+                font-size: 1.2rem;
+            }
+
+            #covid {
+                padding-left: 300px;
+                font-size: 1.5rem;
+            }
+        }
+
+        @media screen and (max-width: 593px) {
+            .nav ul a {
+                text-decoration: none;
+                list-style: none;
+                padding: 0px 11px;
+                font-size: 1.2rem;
+            }
+
+            #covid {
+                padding-left: 200px;
+                font-size: 1.5rem;
+            }
+        }
+
+        @media screen and (max-width: 493px) {
+            .nav ul a {
+                text-decoration: none;
+                list-style: none;
+                padding: 0px 11px;
+                font-size: 1.2rem;
+            }
+
+            #covid {
+                padding-left: 100px;
+                font-size: 1.5rem;
+            }
+        }
+
+        @media screen and (max-width: 393px) {
+            .nav ul a {
+                text-decoration: none;
+                list-style: none;
+                padding: 0px 10px;
+                font-size: 1.2rem;
+            }
+
+            .nav {
+                padding: 0px 0px;
+                margin: 0px -20px;
+            }
+
+            #covid {
+                padding-left: 50px;
+                font-size: 1.5rem;
+            }
+        }
+
+        @media screen and (max-width: 365px) {
+            @media screen and (max-width: 365px) {
+                .nav ul a {
+                    text-decoration: none;
+                    list-style: none;
+                    padding: 0px 10px;
+                    font-size: 1.2rem;
+                }
+
+                .nav {
+                    padding: 0px 0px;
+                    margin: 0px -30px;
+                }
+
+                #covid {
+                    padding-left: 25px;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav">
+                <ul>
+                    <li id="big"><a href="#">My Site</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li id="covid"> COVID-19</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Page Content -->
+    <div class="base">
+        <div class="main-section">
+            <div id="heading">
+                <h1 id="head">Mask Verification</h1>
+                <p>Quick and Simple Mask Verification</p>
+            </div>
+    <form action="/about" method="get">
+    
+        <div class="buttons">
+            <div class="button">
+                <button type="submit" class="btn" name="image" id="button-1">From Image</button>
+            </div>
+            <div class="button">
+                <button type="submit" class="btn" name="video" id="button-2">From Vedio</button>
+            </div>
+        </div>
+    </form>
+    </div>
+</div>
+</body>
+</html>
