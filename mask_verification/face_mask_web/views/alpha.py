@@ -39,8 +39,9 @@ def checked(request):
         net = cv2.dnn.readNet(prototxtPath, weightsPath)
         model = load_model("media/mask_detector.model")
         # path = "http://127.0.0.1:8000/media/" + uploaded_photo.name
-        path = "https://farhan-777.github.io/django_project/mask_verification/media/" + uploaded_photo.name
-        resp = urllib.request.urlopen(path)
+        #path = "https://farhan-777.github.io/django_project/mask_verification/media/" + uploaded_photo.name
+        path = "http://34.131.0.142/django_project/mask_verification/media/" + uploaded_photo.name
+	resp = urllib.request.urlopen(path)
         image = np.asarray(bytearray(resp.read()),dtype="uint8")
         image = cv2.imdecode(image,cv2. IMREAD_COLOR)
         orig = image.copy()
